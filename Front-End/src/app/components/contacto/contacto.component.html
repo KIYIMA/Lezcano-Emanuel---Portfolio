@@ -1,0 +1,55 @@
+<h1 class="contactoH1">Contacto</h1>
+<div class="row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 formu">
+            <form [formGroup]="miFormulario" (ngSubmit)="onCreate()" enctype="multipart/form-data" novalidate >
+            
+                <input  formControlName="emailinput"  required class="email" [(ngModel)]="email" name="email" type="email" placeholder="Email" >
+                
+                <input formControlName="asuntoinput" required minlength="5" class="asunto" [(ngModel)]="asunto" name="asunto" type="text" placeholder="Asunto" >
+                
+                <textarea formControlName="descripcioninput" required minlength="5" class="descripcion" [(ngModel)]="cuerpo" name="descripcion" type="text-tarea" ></textarea>
+                
+                <div class="bottom">
+                    <button  class=" btn " (click)="onCreate()">Send</button>
+                </div>
+            </form>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 o">O ...</div>
+
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+        <div class="whatsapp">
+            <div class="card">
+                <div class="imageCard">
+                    <a href="https://wa.link/41y563">
+                        <img class="img-fluid" src="../../../assets/whatsapp-icono.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="otrasRedes">
+            <div class="img">
+                <a href="https://www.linkedin.com/in/emanuel-ezequiel-lezcano-192a0a225/">
+                    <img src="../../../assets/linkedin.png" alt="LinkedinIcon">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://github.com/KIYIMA">
+                    <img src="../../../assets/github.png" alt="GithubIcon">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://www.instagram.com/ema_7_lz/">
+                    <img src="../../../assets/instagram.png" alt="InstagramIcon">
+                </a>
+            </div>
+            <div class="img">
+                <a href="https://twitter.com/EmaLZ_1">
+                    <img src="../../../assets/twiter.png" alt="TwitterIcon">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

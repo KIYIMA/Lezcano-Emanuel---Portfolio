@@ -1,0 +1,55 @@
+#Educacion{
+    margin-top: 15%;
+}
+.education{
+    padding-bottom: 3%; 
+    text-align: center; 
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 3px 3px 15px rgb(101, 33, 133);
+}
+@media(max-width: 354px){
+    .education{
+        padding-bottom: 3%; 
+        text-align: center; 
+        font-family: 'Silkscreen', cursive;
+        text-shadow: 3px 3px 15px rgb(101, 33, 133);
+        font-size: 160%;
+    }
+}
+@media(max-width: 354px){
+    .nombreInstitucion{
+        color: rgb(200, 196, 250);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 130%;
+    }
+}
+
+div{
+    background-color: #151d36 ;
+    color: white;
+}
+h2, h4{
+    display: inline;
+}
+.nombreInstitucion{
+    color: rgb(200, 196, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.descriptionEducation p{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.editButtom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editButtom button{
+    width: 27px;
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

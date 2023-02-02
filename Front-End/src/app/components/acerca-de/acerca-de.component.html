@@ -1,0 +1,49 @@
+<div id="AcercaDe" class=" acercaDeRow">
+    <div class="row">
+        <div *ngIf="acercaDe.length === 0 ">
+            <h1 class="acercade">Acerca de mí</h1>
+            <div>
+                <button type="button" class="btn btn-dark " routerLink="/nuevoacercade" *ngIf="isLogged ">
+                    Agregar Info
+                </button>
+            </div>
+        </div>
+        <div class="col-12" *ngFor="let AcercaDe of acercaDe">
+
+            <div class="row">
+                <div class='col-xs-12  col-sm-12 col-md-12 col-xl-6 img'>
+                    <img id="fotoPerfil" src="../../../assets/per2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class=" col-xs-12  col-sm-12 col-md-12 col-xl-6 acercade ">
+                    <span>
+                        <h1 class="acercade1">Acerca de mí</h1>
+
+                        <p>{{AcercaDe.descripcion}}</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btnEditDelete" *ngIf="isLogged">
+                    <div class="editButtom">
+                        <button class="btn btn-light" routerLink="/editacercade/{{AcercaDe.id}}">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </div>
+
+                    <div class="editButtom">
+                        <button class="btn btn-danger" style="margin-left:5px ;" *ngIf="isLogged"
+                            (click)="delete(AcercaDe.id)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

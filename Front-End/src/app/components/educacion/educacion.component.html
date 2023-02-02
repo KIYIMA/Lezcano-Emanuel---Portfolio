@@ -1,0 +1,35 @@
+<div id="Educacion" class=" experienciaRow">
+    <h1 class="education">Educación</h1>
+
+    <div *ngIf="isLogged" class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" >
+            Agregar educación
+        </button>
+    </div>
+
+    <div [ngClass]="{'col-lg-11': isLogged, 'col-xs-12 col-sm-12 col-md-12 col-lg-12': !isLogged } ">
+        <table class="table ">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h3 class="nombreInstitucion">{{Educacion.nombreE}}</h3>
+                    </td>
+                    <td class="descriptionEducation"><p>{{Educacion.descripcionE}}</p></td>
+                    <td *ngIf="isLogged">
+                        <div class="editButtom">
+                            <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <div class="editButtom">
+                            <button class="btn btn-danger" (click)="delete(Educacion.id)"><i
+                                class="bi bi-trash"></i> </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

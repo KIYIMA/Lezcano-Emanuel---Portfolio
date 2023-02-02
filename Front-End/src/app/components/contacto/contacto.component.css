@@ -1,0 +1,139 @@
+.contacto {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.row{
+    margin-top: 10%;
+}
+.contactoH1 {
+    margin-top: 15%;
+    color: white;
+    padding-bottom: 3%;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 3px 3px 15px rgb(101, 33, 133);
+}
+
+.h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email {
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.asunto {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.descripcion {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.btn {
+    color: rgb(200, 196, 250);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    border-color: rgb(181, 177, 255);
+    border-width: medium;
+}
+
+.btn:hover {
+    box-shadow: inset 0px 0px 15px rgb(110, 33, 133);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+.o{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0% 3% 0%;
+}
+.redes{
+    display: flex;
+}
+ .img img{
+    width: 50px;
+    display: flex;
+    
+}
+.whatsapp{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    width: 50%;
+    border: none;
+    border-radius: 8%;
+}
+
+.card .imageCard img{
+    border-radius: 6%;
+}
+.otrasRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+.otrasRedes .img{
+    padding: 5px;
+}
+
+
+@media(max-width: 354px){
+    .otrasRedes .img{
+        padding: 5px;
+    }
+    .otrasRedes img{
+        width: 35px;
+    }
+    .card{
+        display: flex;
+        width: 40%;
+        border: none;
+        border-radius: 8%;
+    }
+    .btn {
+        color: rgb(200, 196, 250);
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        border-color: rgb(181, 177, 255);
+        border-width: medium;
+        width: 60px;
+    }
+    
+    .btn:hover {
+        box-shadow: inset 0px 0px 15px rgb(110, 33, 133);
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+}

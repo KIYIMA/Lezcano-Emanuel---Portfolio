@@ -1,0 +1,49 @@
+<div class="cc">
+    <div class="redes">
+
+        <div class="logo">
+            <a href="">
+                <div class="link">
+                    <div><img src="../../../assets/gato.png" alt="Logo"></div>
+                    <div class="textLogo">Lezcano Emanuel</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="btnInicio">
+            <div class="CV">
+                <a href="#CV">
+                    CV
+                </a>
+            </div>
+            <div class="proyectos">
+                <a href="#Proyectos">
+                    Proyectos
+                </a>
+            </div>
+            <div class="hys">
+                <a href="#HyS">
+                    HyS
+                </a>
+            </div>
+            <div class="educacion">
+                <a href="#Educacion">
+                    Educacion
+                </a>
+            </div>
+            <div class="acercaDe">
+                <a href="#AcercaDe">
+                    Yo
+                </a>
+            </div>
+            <div class="btnEdit">
+                <button type="button" class="btn  iniciar" (click)="login()" *ngIf="!isLogged"><i
+                        class="bi bi-box-arrow-right"></i></button>
+            </div>
+            <div class="btnEdit">
+                <button type="button" class="btn iniciar" (click)="onLogOut()" *ngIf="isLogged"><i
+                        class="bi bi-box-arrow-left"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

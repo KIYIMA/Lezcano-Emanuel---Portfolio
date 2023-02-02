@@ -1,0 +1,42 @@
+<div id="Proyectos" class=" proyectoRow">
+    <h1 class="proyects">Proyectos realizados</h1>
+    <div class="col-12 contAgregar" *ngIf="isLogged" style="margin-bottom: 2%;">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto">
+            Agregar Proyecto
+        </button>
+    </div>
+
+    <div class="contentProyects">
+        <div class="itemsProyects" *ngFor="let Proyectos of proyecto">
+
+            
+                <div class="card">
+                    <div class="header-card">
+                        <h2 style="color: rgb(255, 255, 255);">{{Proyectos.nombreP}}</h2>
+                    </div>
+                    <div class="body-card">
+                        <p style="color: rgb(255, 255, 255);"> {{Proyectos.descripcionP}}</p>
+                    </div>
+                    <div class="footer-card">
+                        <div *ngIf="Proyectos.urlP" style="margin-bottom: 3%;">
+                            <span>Url: <a href="{{Proyectos.urlP}}">{{Proyectos.urlP}}</a></span>
+                        </div>
+                    </div>
+                </div>
+            
+            <div *ngIf="isLogged" class="editGroupButtoms">
+                <div class="editButtom" *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editproyecto/{{Proyectos.id}}">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </div>
+                <div class="editButtom" *ngIf="isLogged">
+                    <button class="btn btn-danger" style="margin-left:3px ;" (click)="delete(Proyectos.id)">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

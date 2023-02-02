@@ -1,0 +1,31 @@
+
+div{
+    background-color: #151d36 ;
+    color: white;
+}
+h2, h4{
+    display: inline;
+}
+.tituloExp{
+    color: rgb(200, 196, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.descripcionExp p{
+    display: flex;
+    justify-content: center;
+    color: white;  
+}
+.editButtom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editButtom button{
+    width: 27px;
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

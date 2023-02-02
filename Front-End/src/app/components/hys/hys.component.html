@@ -1,0 +1,33 @@
+<div id="HyS" class=" hysRow">
+    <h1 class="hys">Hard & Soft skills</h1>
+
+    <div class="contenedor">
+
+        <div class="habilidades">
+            <div *ngFor="let hyS of hySModel">
+                <div class="title">
+                    <h5 class="lenguaje">{{hyS.nombre}}</h5>
+                    <button class="btn btn-light buttEdit" *ngIf="isLogged" routerLink="/editHyS/{{hyS.id}}">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button class="btn btn-danger buttEdit" *ngIf="isLogged" (click)="delete(hyS.id)">
+                        <i class="bi bi-trash"></i> 
+                    </button>
+                </div>
+                <div class="barra">
+                    <div class="progreso" style="--w: {{hyS.porcentaje}}">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="añadir" >
+                <button class="btn btn-dark " routerLink="/newTech" *ngIf="isLogged">
+                    Agregar HyS
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>

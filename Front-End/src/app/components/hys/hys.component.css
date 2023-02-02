@@ -1,0 +1,129 @@
+.hys{
+    padding-bottom: 3%; 
+    text-align: center; 
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 3px 3px 15px rgb(101, 33, 133);
+}
+@media(max-width: 354px){
+    .hys{
+        padding-bottom: 3%; 
+        text-align: center; 
+        font-family: 'Silkscreen', cursive;
+        text-shadow: 3px 3px 15px rgb(101, 33, 133);
+        font-size: 150%;
+    }
+}
+.lenguaje{
+    margin-right: 5px ; 
+    font-family: 'Silkscreen',cursive;
+}
+@media(max-width: 354px){
+    .lenguaje{
+        margin-right: 5px ; 
+        font-family: 'Silkscreen',cursive;
+        font-size: 130%;
+    }
+}
+.hysRow {
+    margin-top: 15%;
+    color: white;
+    padding: 4%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra {
+    width: 100%;
+    height: 20px;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    box-shadow: 4px 25px 45px rgb(0, 0, 0);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.buttEdit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    margin-left: 1%;
+}
+
+.añadir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+@media (max-width: 800px) {
+    h5 {
+        text-align: center;
+    }
+    .buttEdit{
+        width: 30px;
+        height: 30px;
+        margin: 0.2em;
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .habilidades {
+        width: 75%;
+    }
+    h5{
+        text-align: center;
+    }
+    .contenedor{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .habilidades {
+        width: 75%;
+    }
+    h5{
+        text-align: center;
+    }
+    .contenedor{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.progreso {
+    width: var(--w);
+    height: 100%;
+    background: rgb(200, 196, 250);
+    border-radius: 10px;
+    animation: Aumentar 5s ease;
+}
+
+@keyframes Aumentar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--w)
+    }
+}
